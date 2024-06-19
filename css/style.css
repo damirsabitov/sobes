@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 1097px;
+    margin-inline: auto;
+}
+
+.field {
+    display: flex;
+    min-height: 1098px;
+    gap: 20px;
+}
+
+
+.squares {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.squares--one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.squares--two {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.squares--three {
+    display: flex;
+
+}
+
+.square {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 352px;
+    min-height: 352px;
+    background-color: #FF0000;
+    font-weight: 700;
+    font-size: 64px;
+    color: #fff;
+    text-shadow: 0 4px 4px rgba(0 0 0 /.25);
+    animation: card-goodbye-epileptic 1.5s infinite;
+}
+
+/* * animation */
+
+.square1 {
+    animation-delay: 0s;
+}
+
+.square2 {
+    animation-delay: .7s;
+}
+
+.square3 {
+    animation-delay: .28s;
+}
+
+.square4 {
+    animation-delay: .4s;
+}
+
+.square5 {
+    animation-delay: .9s;
+}
+
+.square6 {
+    animation-delay: .11s;
+}
+
+@keyframes card-goodbye-epileptic {
+
+    0%,
+    75% {
+        background-color: #FF0000;
+    }
+
+    25% {
+        background-color: #0500FF;
+    }
+
+    50% {
+        background-color: #52FF00;
+    }
+}
+
+/* * media */
+
+@media (max-width: 1111px) {
+    .field {
+        flex-direction: column;
+    }
+
+    .squares {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 723px) {
+    .squares {
+        flex-direction: column;
+    }
+}
